@@ -2,10 +2,10 @@
 title: Docker
 description: 
 published: true
-date: 2022-04-04T20:41:15.976Z
+date: 2022-04-26T21:14:17.609Z
 tags: 
 editor: markdown
-dateCreated: 2022-04-02T21:28:38.634Z
+dateCreated: 2022-04-26T22:03:09.374Z
 ---
 
 # Docker
@@ -173,3 +173,29 @@ docker run -d -p 8080:3000 --name wiki --restart unless-stopped -e "DB_TYPE=post
 ## TODO
 
 Update with: <https://geekflare.com/es/docker-commands/> 
+
+**Commands to check:**
+docker ps
+docker ps -a
+docker start a1609c5405f9
+docker exec -it ubuntu /bin/bash
+docker commit -m "added Node.js" -a "robertouj" a1609c5405f9 robertouj/ubuntu-with-nodejs
+docker images
+docker tag roberto/ubuntu-with-nodejs robertouj/ubuntu-with-nodejs
+docker push robertouj/ubuntu-with-nodejs
+docker pull robertouj/ubuntu-with-nodejs
+docker rm robertouj/ubuntu-with-nodejs
+docker image rm robertouj/ubuntu-with-nodejs 
+docker stop suspicious_taussig
+docker run --name test-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker run --name test-postgres -e POSTGRES_USER=mytestuser -e POSTGRES_PASSWORD=mytestuserpassword -d postgres
+docker run --name test-postgres -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+docker run --name test-postgres -e POSTGRES_USER=rhcodingtask -e POSTGRES_PASSWORD=rhcodingtaskpassword -d -p 5432:5432 postgres
+docker rmi requarks/wiki:latest 
+docker network ls
+docker info
+docker network create wikinet
+docker run --name postgres-wiki -e POSTGRES_USER=wikiuser -e POSTGRES_PASSWORD=wikipassword -d -p 5432:5432 postgres
+docker run --rm -p 5050:5050 -e PGADMIN_DEFAULT_EMAIL=robertouj -e PGADMIN_DEFAULT_PASSWORD=ruj dpage/pgadmin4:latest
+docker run -d -p 8080:3000 --name wiki --restart unless-stopped -e "DB_TYPE=postgres" -e "DB_HOST=172.17.02" -e "DB_PORT=5432" -e "DB_USER=wiki" -e "DB_PASS=wikipassword" -e "DB_NAME=wiki" ghcr.io/requarks/wiki:2
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' wiki-db
