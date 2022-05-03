@@ -2,7 +2,7 @@
 title: TypeScript
 description: 
 published: true
-date: 2022-05-03T17:38:36.329Z
+date: 2022-05-03T18:01:02.105Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-03T17:37:27.433Z
@@ -203,3 +203,39 @@ Then the start script can be created to execute the server.
 
 ```TypeScripton
 "start": "lite-server"
+```
+
+## Useful links
+
+Everyday Types: 
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+
+Configuration: What is a tsconfig.json:
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+Official compiler options: tsc CLI Options
+https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+tsconfig Docs: 
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+Compiler Config Docs: 
+https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+VS Code TS Debugging: 
+https://code.visualstudio.com/docs/typescript/typescript-debugging
+
+Next-gen JS Feature Table
+https://kangax.github.io/compat-table/es6/
+
+Reference vs Primitive Values
+https://academind.com/tutorials/reference-vs-primitive-values
+
+Promise
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+Utility Types
+https://www.typescriptlang.org/docs/handbook/utility-types.html
+
+More on Generics:
+https://www.typescriptlang.org/docs/handbook/generics.html
